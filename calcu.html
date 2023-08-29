@@ -1,0 +1,57 @@
+<!-- Create a mini calculator application, which has following functionalities
+Addition
+Subtraction
+Division
+Multiplication
+Your app should have
+Two input boxes which should take two numbers from the user.
+Four Buttons with following text content
+Add
+Subtract
+Divide
+Multiply
+When user enter 2 and 4 and clicks on multiply button, an alert should come with 8 as ans
+When user enter 8 and 4 and clicks on Divide button,an alert should come with 2 as ans -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <input type="text" id="inp2">
+    <button onclick="b1()">Add</button>
+    <button onclick="b2()">Sub</button>
+    <button onclick="b3()">Div</button>
+    <button onclick="b4()">Mulit</button>
+
+<script>
+    let Input1 = document.getElementById("inp1")
+     let Input2 = document.getElementById("inp2")
+     function b1()
+     {
+        alert(+Input1.value + +Input2.value)
+     }
+
+     function b2()
+     {
+        alert(+Input1.value - +Input2.value)
+     }
+
+     function b3()
+     {
+        alert(+Input1.value / +Input2.value)
+     }
+
+     function b4()
+     {
+        alert(+Input1.value * +Input2.value)
+     }
+
+</script>
+</body>
+
+</html>
